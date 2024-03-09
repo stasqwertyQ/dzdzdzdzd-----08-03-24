@@ -10,7 +10,7 @@ Account.prototype.getInfo = function() {
   console.log(`Login: ${this.login}, Email: ${this.email}`);
 };
 
-// console.log(Account.prototype.getInfo); 
+
 
 const mango = new Account({
   login: 'Mangozedog',
@@ -68,13 +68,13 @@ const storage = new Storage([
 ]);
 
 const items = storage.getItems();
-console.table(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
+console.log(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
 
 storage.addItem('Дроїд');
-console.table(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+console.log(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
 
 storage.removeItem('Пролонгер');
-console.table(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
+console.log(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
 
 
 
