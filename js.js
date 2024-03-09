@@ -85,24 +85,24 @@ console.log(storage.items); // [ "Нанітоіди", "Залізні жупи"
 
 
 class StringBuilder {
-  constructor(strr) {
-    this._value = strr;
+  constructor(str) {
+    this._value = str;
   }
 
   get value() {
     return this._value;
   }
 
-  append(strr) {
-    this._value += strr;
+  append(str) {
+    this._value += str;
   }
 
-  prepend(strr) {
-    this._value = strr + this._value;
+  prepend(str) {
+    this._value = str + this._value;
   }
 
-  pad(strr) {
-    this._value = strr + this._value + strr;
+  pad(str) {
+    this._value = str + this._value + str;
   }
 }
 
